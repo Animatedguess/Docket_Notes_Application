@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(to right, #1abc9c, #3498db);
+  color: aliceblue;
+}
+
+#layout {
+  display: flex;
+  width: 100%;
+}
+
+#container {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#addTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  margin-right: 2%;
+  padding: 0px;
+  background-color: #3498db;
+  border: none;
+  font-size: 38px;
+  height: max-content;
+}
+
+#button {
+  width: 5%;
+}
+
+img {
+  margin: 0px;
+}
+
+#addTask img {
+  /* display: inline-block; */
+  transition: transform 0.5s;
+  /* transition: transform 0.1s; */
+}
+
+.rotate {
+  animation: rotate 1s forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.eachNote {
+  width: 300px;
+  height: 300px;
+  border: none;
+  padding: 2px;
+  margin: 0px;
+}
+
+.head {
+  background-color: black;
+  width: 296px;
+  height: 48px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.headText {
+  background-color: black;
+  margin: 2px;
+  width: 66%;
+  color: skyblue;
+  font-family: cursive;
+  border: none;
+  resize: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.img {
+  width: 34%;
+}
+
+.imgs {
+  background-color: black;
+  margin: 0px;
+  /* margin-right: 2px; */
+  border: none;
+  padding: 0px;
+  width: max-content;
+  height: max-content;
+}
+
+.main {
+  background-color: rgb(46, 46, 46);
+  width: 296px;
+  padding: 0px;
+  height: 248px;
+  margin: 0px;
+  border: none;
+  resize: none;
+  color: aliceblue;
+  font-size: 14px;
+}
+
+textarea::placeholder {
+  color: rgb(204, 37, 37);
+  /* Change this to your desired color */
+  opacity: 0.75;
+  /* For older browsers */
+}
